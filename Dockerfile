@@ -4,7 +4,7 @@ FROM jupyter/base-notebook
 # Copia do script de bash para o download dos arquivos .csv refente as viagens dos taxis amarelos e bairros de NY
 COPY download-data-nyc-tlc-2020.sh ./work/data/download-data-nyc-tlc-2020.sh
 
-# Copia o notebook de analise para o 
+# Copia o notebook de analise para o diretório work
 COPY analise-nytaxis.ipynb ./work/analise-nytaxis.ipynb
 
 # Instalacao das bibliotecas do python necessarias para a analise 
