@@ -1,3 +1,6 @@
+data/
+Dockerfile
+.dockerignore
 .git
 .gitignore
 .ipynb_checkpoints

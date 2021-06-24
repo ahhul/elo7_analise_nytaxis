@@ -1,6 +1,9 @@
 # Importacao a imagem base do notebook do jupyter
 FROM jupyter/base-notebook
 
+# Cria o diretorio para armazenamento dos dados
+RUN mkdir ./work/data/
+
 # Copia do script de bash para o download dos arquivos .csv refente as viagens dos taxis amarelos e bairros de NY
 COPY download-data-nyc-tlc-2020.sh ./work/data/download-data-nyc-tlc-2020.sh
 
